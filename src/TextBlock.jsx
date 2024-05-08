@@ -1,21 +1,28 @@
-
 function TextBlock() {
+
     return (
-        <div id='textblock'>
+        <>
+            <div id='textblock'>
+                <div id="textblock-container">
+                    <h1 id="textblock-title">Wanderlust</h1>
+                    <p id="textblock-content">
 
-            <div id="textblock-container">
-                <h1 id="textblock-title">What is Firewatch?</h1>
-                <p id="textblock-content">
-                    The year is 1989.<br /><br />
-                    You are a man named Henry who has retreated from your messy life to work as a fire lookout in the Wyoming wilderness. Perched atop a mountain, it is your job to find smoke and keep the wilderness safe.<br /><br />
-                    An especially hot, dry summer has everyone on edge. Your supervisor, a woman named Delilah, is available to youat all times over a small, handheld radio—and is your only contact with the world you have left behind.<br /><br />
-                    But when something strange draws you out of your lookout tower and into the world below, you will explore a wild and unknown environment, facing questions and making interpersonal choices that can build or destroy the only meaningful relationship you have.
-                </p>
+                        Wanderlust encapsulates an insatiable passion for exploration and adventure, a burning desire to
+                        immerse oneself in the vast tapestry of cultures, landscapes, and experiences our world has to offer.
+                        It's an irresistible urge to wander beyond the confines of familiarity, to seek out new horizons,
+                        and to revel in the thrill of discovery. It's a relentless yearning to roam untamed landscapes,
+                        to get lost in bustling cities, and to connect with people whose stories weave the fabric of humanity. <br />
+                        <span className='text_change'>
+                            Wanderlust is more than just a desire to travel; it's a profound appreciation for the diversity and wonder of our planet,
+                            a celebration of curiosity and courage, and a reminder that the journey itself is often as enriching as the destination.
+                        </span>
+                    </p>
+                </div>
             </div>
-        </div>
 
-    
-  )
+        </>
+
+    )
 }
 
 export default TextBlock

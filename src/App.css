@@ -4,7 +4,7 @@
 }
 
 #textblock-container {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   padding-top: 70px;
 }
@@ -28,9 +28,9 @@
   position: fixed;
   width: 100%;
   bottom: 0px;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin-bottom: 20px;
 
 }
@@ -42,59 +42,82 @@
   font-weight: 600;
 }
 
-.animation, .animation_layer {
-    height: 1000px;
+.animation,
+.animation_layer {
+  height: 1000px;
 }
 
 .animation {
   display: block;
-    position: relative;
-    z-index: 10;
+  position: relative;
+  z-index: 10;
 }
 
 .animation_layer {
-    background-position: bottom center;
-    background-size: auto 860px;
-    background-repeat: repeat-x;
-    width: 100%;
-    position: absolute;
+  background-position: bottom center;
+  background-size: auto 860px;
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;
 }
+
 .animation_layer.parallax {
-    position: fixed;
+  position: fixed;
 }
 
-#artback {
-  background:rgb(82, 72, 142);
+#backgroundcolor {
+  background: rgb(82, 72, 142);
 }
 
-#mountain {
+#moon {
   background-image: url(./assets/1.png);
 }
 
-#logoland {
+#cloud {
   background-image: url(./assets/2.png);
 }
 
- #jungle1 {
-  background-image: url(./assets/wanderlust.png);
-} 
+#logo {
+  height: 140px;
+  margin-top: 480px;
+  margin-left: 390px;
+}
 
- #jungle2 {
+.imageWL {
+  height: 200px;
+  width: 50%;
+}
+
+#mountain {
   background-image: url(./assets/3.png);
 }
 
-#jungle3 {
+#man {
   background-image: url(./assets/4.png);
 }
 
-/*#jungle4 {
-  background-image: url(./assets/4.png);
+@media (max-width: 776px) {
+  #logo {
+    margin-left: 160px;
+  }
+
+  .imageWL {
+    height: 140px;
+  }
+
+  #textblock-content .text_change {
+    display: none;
+  }
+
 }
 
-#jungle5 {
-  background-image: url(./assets/jungle5.png);
-}
+@media (min-width: 777px) and (max-width: 1024px) {
+  #logo {
+    margin-left: 200px;
+  }
 
-#manonmountain {
-  background-image: url(./assets/man_on_mountain.png);
-} */
+  .imageWL {
+    height: 140px;
+    margin-left: 20px;
+  }
+}
